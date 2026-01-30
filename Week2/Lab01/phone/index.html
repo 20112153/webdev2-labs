@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Call Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="outer">
+        <h1>Phone Call Simulation</h1>
+
+        <div id="callStatus">Incoming Call...</div>
+
+        <section id="btn">
+            <button id="acceptButton" class="accepted">Accept</button>
+            <button id="declineButton" class="declined">Decline</button>
+            <button id="messageButton" class="message">Message</button>
+        </section>
+    </div>
+    <script>
+const acceptButton = document.querySelector('.accepted');
+acceptButton.addEventListener('click', () => {
+    document.querySelector('#callStatus').textContent = 'Call accepted';
+    callStatus.style.backgroundColor= 'lightgreen';
+  });
+  const declineButton = document.querySelector('.declined');
+declineButton.addEventListener('click', () => {
+    document.querySelector('#callStatus').textContent = 'Call declined';
+    callStatus.style.backgroundColor= 'lightcoral';
+  });
+  const messageButton = document.querySelector('.message');
+messageButton.addEventListener('click', () => {
+    document.querySelector('#callStatus').textContent = 'Sending Message...';
+    callStatus.style.backgroundColor= 'lightyellow';
+  });
+
+
+
+    </script>
+</body>
+
+</html>
