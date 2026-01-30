@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>querySelector</title>
+  <title>Query Selector</title>
 </head>
 
 <body>
-  <h1>querySelector</h1>
+  <h1>Query Selector</h1>
 
   <ul id="weekOne">
     <li class="fruit" id="apple1">Apple</li>
@@ -28,6 +28,13 @@
   </ul>
 
   <script>
+  //weekOne list with id
+const list1a = document.querySelector('#weekOne');
+console.log(list1a)
+
+//weekOne list with tag
+const list1b = document.querySelector('ul');
+console.log(list1b)
 //Apple from first list with tag
 const app1 = list1a.querySelector('li');
 console.log(app1)
@@ -49,24 +56,20 @@ const pot2 = document.querySelector('#potato1');
 console.log(pot2)
 
 
-//weekOne list with id
-const list1a = document.querySelector('#weekOne');
-console.log(list1a)
 
-//weekOne list with tag
-const list1b = document.querySelector('ul');
-console.log(list1b)
-//Using id
-const list1c = list1a.querySelector('#weekTwo');
-console.log(apple2)
-//using class
-const apple3 = list1a.querySelector('#apple2');
-console.log(apple2)
-//using class
-const apple2 = list1a.querySelector('.fruit');
-console.log(apple2)
+// Select week two list properly
+const appleWeek2 = document.querySelector('#weekTwo');
+console.log(appleWeek2);
+
+// Apple from week two using id
+const appleWeek2b = document.querySelector('#apple2');
+console.log(appleWeek2b);
+
+// Apple from week two using class
+const appleWeek2c = document.querySelector('.fruit');
+console.log(appleWeek2c);
 //using id
-const list1e = list1a.querySelector('#apple2');
+const list1e = list1b.querySelector('#apple2');
 console.log(apple2)
 
 

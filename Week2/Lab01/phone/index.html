@@ -34,6 +34,9 @@ declineButton.addEventListener('click', () => {
 messageButton.addEventListener('click', () => {
     document.querySelector('#callStatus').textContent = 'Sending Message...';
     callStatus.style.backgroundColor= 'lightyellow';
+    setTimeout(() => {
+ alert("I will call you later"); // Show alert after update
+}, 200);
   });
 
 
