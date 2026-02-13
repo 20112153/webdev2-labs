@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Date()</title>
+ </head>
+ <body>
+ <p id="date">sadad</p>
+ <button>Get date</button>
+ <script>
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', (evt) => {
+year=new Date().getFullYear();
+document.querySelector('#date').textContent = `(${year}) Javascript \u00A9 `;
+})
+ </script>
+ </body>
+ </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Math Library</title>
+	<style>
+		body {
+			width: 400px;
+			margin: 0 auto;
+		}
+
+		p {
+			border: solid black 1px;
+			height: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>The Math Library</h1>
+	<p id="num"></p>
+	<p id="area"></p>
+	<p id="circumference"></p>
+	<button>Circle Calculations</button>
+	<script>
+		const btn = document.querySelector('button');
+
+		btn.addEventListener('click', (evt) => {
+			let radius=prompt("What is the radius?");
+			let area=(3.14*radius^2);
+			let circumference=(2*3.14*radius)
+			document.querySelector('#num').textContent = `The radius is (${radius}) `;
+			document.querySelector('#area').textContent = `The area is (${area}) `;
+			document.querySelector('#circumference').textContent = `The circumference is (${radius}) `;
+		})
+	</script>
+</body>
+
+</html>
