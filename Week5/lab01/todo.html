@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+</head>
+
+<body>
+<h1>To Do List</h1>
+<p></p>
+<script>
+
+let todos = ["study", "exercise", "cook"];
+let para = document.querySelector('p');
+para.insertAdjacentHTML('beforeend',`${todos.join(", ")}<br>`);
+
+todos.unshift("Relax","Sleep");
+console.log(todos);
+para.insertAdjacentHTML('beforeend',`${todos.join(", ")}<br>`);
+
+todos.push("Wake up","Walk");
+console.log(todos);
+para.insertAdjacentHTML('beforeend',`${todos.join(", ")}<br>`);
+
+todos.pop();
+console.log(todos);
+para.insertAdjacentHTML('beforeend',`${todos.join(", ")}<br>`);
+
+todos.shift();
+todos.splice(1,1,"Read");
+console.log(todos);
+para.insertAdjacentHTML('beforeend',`${todos.join(", ")}<br>`);
+
+todos.splice(0,1,"Meditate");
+console.log(todos)
+para.insertAdjacentHTML('beforeend',`${todos.join(", ")}<br>`);
+
+</script>
+</body>
+</html>

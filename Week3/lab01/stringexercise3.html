@@ -26,9 +26,9 @@ const btn = document.querySelector('button');
   
 btn.addEventListener('click', (evt) => {
   let date = "2026-02-04";
-  let month =date.split(" ")
+  let month =date.split("-")
  
-  document.querySelector('#result').textContent = `The date is  is ${month}`;
+  document.querySelector('#result').textContent = `The date is  is ${month[2]}-${month[1]}-${month[0]}`;
   
 });
 </script>

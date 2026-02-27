@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>Array Methods</title>
+</head>
+<body>
+<h1>Array Methods</h1>
+<p id = "list1"></p>
+<p id = "list2"></p>
+<p id = "list3"></p>
+<p id = "list4"></p>
+<script>
+const fltr =[];
+
+const sort =[];
+const numbers = [12, 5, 8, 130, 44, 2, 19];
+document.querySelector('#list1').textContent =  `Array elements: ${numbers.join(", ")}`;
+
+let paraa = document.querySelector('p');
+
+for (const num of numbers) {
+  if (num > 10  ) {
+    fltr.push(num)
+    console.log(fltr)
+  }
+}
+paraa.insertAdjacentHTML('beforeend', `<br>Filtered: ${fltr}<br>`);
+
+const multiplyByTwo = (num) => num * 2;
+const map = numbers.map(multiplyByTwo)
+console.log(map)
+paraa.insertAdjacentHTML('beforeend', `<br>Mapped: ${map}<br>`);
+
+console.log(numbers.sort((a,b) => a > b ? 1 : -1))
+paraa.insertAdjacentHTML('beforeend', `<br>Sorted: ${numbers.sort((a, b) => a - b)}<br>`);
+</script>
+</body>
+</html>
